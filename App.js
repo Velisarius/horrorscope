@@ -10,9 +10,9 @@ import {
   Alert,
 } from 'react-native';
 
-const PUSH_ENDPOINT = 'https://your-server.com/users/push-token';
+const PUSH_ENDPOINT = 'https://horrorscope.firebase.com/send_notification';
 
-export default function HomeScreen() {
+export default function App() {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
 
   if (!isLoadingComplete) {
@@ -111,4 +111,3 @@ function handleLoadingError(error) {
 function handleFinishLoading(setLoadingComplete) {
   setLoadingComplete(true);
 }
-
