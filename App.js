@@ -10,7 +10,7 @@ import {
   Alert,
 } from 'react-native';
 
-const PUSH_ENDPOINT = 'https://horrorscope.firebaseapp.com/send_notification';
+const PUSH_ENDPOINT = 'https://us-central1-main-campaign-245114.cloudfunctions.net/send_horoscope'
 
 export default function App() {
   const [isLoadingComplete, setLoadingComplete] = useState(false);
